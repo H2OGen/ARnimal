@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BlueGoal
   - RedGoal
+  - Catchable
+  - Catcher
   layers:
   - Default
   - TransparentFX
