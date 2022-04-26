@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Catcher : MonoBehaviour
+public class Catchable : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Catchable")
+        if (other.gameObject.tag == "Catcher")
         {
-            StartCoroutine("Catching", other.gameObject);
+            StartCoroutine("Caught", other.gameObject);
         }
     }
 
-    IEnumerator Catching(GameObject Catchable)
+    IEnumerator Caught(GameObject Catchable)
     {
-        
+
         Destroy(gameObject);
         return null;
     }

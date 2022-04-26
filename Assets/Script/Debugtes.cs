@@ -10,15 +10,15 @@ public class Debugtes : MonoBehaviour
         
     }
 
-    public GameObject bola;
-    public GameObject lemur;
-    public GameObject Kamera;
+    public GameObject Ball;
+    public GameObject Lemur;
+    public GameObject Camera;
     // Update is called once per frame
     void Update()
     {
         
-        Debug.Log("bola = "+bola.transform.position);
-        Debug.Log("lemur = " + lemur.transform.position);
-        Debug.Log("kamera = " + Kamera.transform.position);
+        Debug.Log("Ball = "+Ball.transform.position);
+        Debug.Log("Lemur = " + Lemur.transform.position);
+        Debug.Log("Camera = " + Camera.transform.position);
     }
 }
