@@ -17,33 +17,38 @@ public class DABugtes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    DABug.Log("");
-    GameObject[] CatchObjects = GameObject.FindGameObjectsWithTag("Catchable");
-    foreach(GameObject CatchObject in CatchObjects)
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        DABug.Log("");
+        GameObject[] CatchObjects = GameObject.FindGameObjectsWithTag("Catchable");
+        foreach (GameObject CatchObject in CatchObjects)
         {
             DABug.Log(CatchObject.name + " = " + CatchObject.transform.position);
         }
-    GameObject[] CatcherObjects = GameObject.FindGameObjectsWithTag("Catcher");
-    foreach (GameObject CatcherObject in CatcherObjects)
+        GameObject[] CatcherObjects = GameObject.FindGameObjectsWithTag("Catcher");
+        foreach (GameObject CatcherObject in CatcherObjects)
         {
             DABug.Log(CatcherObject.name + " = " + CatcherObject.transform.position);
         }
-       
+        GameObject[] CameraObjects = GameObject.FindGameObjectsWithTag("MainCamera");
+        foreach (GameObject CameraObject in CameraObjects)
+        {
+            DABug.Log(CameraObject.name + " = " + CameraObject.transform.position);
+        }
+    }    
 }
