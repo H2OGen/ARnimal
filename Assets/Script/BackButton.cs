@@ -1,25 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int type;
+    public string sceneName;
 
-    // Update is called once per frame
-    void Update()
+void Update()
     {
         if (Application.platform == RuntimePlatform.Android)
         {
-            if (Input.GetKey(KeyCode.Escape))
+            if (Input.GetKeyUp(KeyCode.Escape))
             {
-                // Insert Code Here (I.E. Load Scene, Etc)
-                // OR Application.Quit();
-
+                if(type == 1)
+                {
+                    SceneManager.LoadScene(sceneName);
+                }
+                else if(type == 0)
+                {
+                    Application.Quit();
+                }
                 return;
             }
         }

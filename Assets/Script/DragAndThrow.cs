@@ -3,6 +3,7 @@ using System.Collections;
 
 public class DragAndThrow : MonoBehaviour {
     bool dragging = false;
+    [SerializeField] private GameObject Front;
     float distance;
     public float ThrowSpeed;
     public float ArcSpeed;
@@ -18,7 +19,7 @@ public class DragAndThrow : MonoBehaviour {
     public void OnMouseUp()
     {
         this.GetComponent<Rigidbody>().useGravity = true;
-        this.GetComponent<Rigidbody>().velocity += this.transform.forward * ThrowSpeed;
+        this.GetComponent<Rigidbody>().velocity += Front.transform.forward * ThrowSpeed;
         this.GetComponent<Rigidbody>().velocity += this.transform.up * ArcSpeed;
         dragging = false;
 
