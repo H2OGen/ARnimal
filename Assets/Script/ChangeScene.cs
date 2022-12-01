@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-
+    public AudioSource Click;
     public void Changing(string sceneName)
     {
-        
+        Click.Play();
         SceneManager.LoadScene(sceneName);
     }
     // Start is called before the first frame update

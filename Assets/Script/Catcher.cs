@@ -8,7 +8,6 @@ public class Catcher : MonoBehaviour
     {
         if(other.gameObject.tag == "Catchable")
         {
-            Debug.Log("ok1");
             StartCoroutine("Catching", other.gameObject);
         }
     }
@@ -16,7 +15,6 @@ public class Catcher : MonoBehaviour
     IEnumerator Catching(GameObject Catchable)
     {
         Destroy(this.gameObject);
-        Debug.Log("ok2");
         return null;
     }
 }

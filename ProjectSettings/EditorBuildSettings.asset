@@ -12,6 +12,33 @@ EditorBuildSettings:
     path: Assets/Scenes/AR_Lemur.unity
     guid: 209ec88fdfc06cc4cae7a03bf7bfc5c4
   - enabled: 1
-    path: Assets/Scenes/Non-AR_Lemur.unity
+    path: Assets/Scenes/Non-AR_Bird.unity
     guid: 1d12d9088dee4be47a55086d08c6545b
+  - enabled: 1
+    path: Assets/Scenes/AR_Bird.unity
+    guid: caf9c6b80be544f4a880698717ae64f6
+  - enabled: 1
+    path: Assets/Scenes/Non-AR_Lemur.unity
+    guid: 27968c387039c444aaa9fe0502192000
+  - enabled: 1
+    path: Assets/Scenes/Non-AR_Komodo.unity
+    guid: 958a6a0c01de9ce46938634442d12e17
+  - enabled: 1
+    path: Assets/Scenes/AR_Komodo.unity
+    guid: af2a3098f902fa4449dddf1f4012806d
+  - enabled: 1
+    path: Assets/Scenes/AR_Tiger.unity
+    guid: 4a0b6060d35e8ff41993ce47af97d07c
+  - enabled: 1
+    path: Assets/Scenes/Non-AR_Tiger.unity
+    guid: 275326a82c0435140bc7382992edeb2e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Non-AR_Shark.unity
+    guid: 1e15e7fe1fde2f540805262ddb98eccd
+  - enabled: 1
+    path: Assets/Scenes/AR_Shark.unity
+    guid: 53870e9317480774abb55542412bdc82
   m_configObjects: {}
